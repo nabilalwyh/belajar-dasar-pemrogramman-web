@@ -1,0 +1,136 @@
+/* Font dan reset dasar */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* Jumbotron */
+.jumbotron {
+  padding: 32px;
+  background-color: #4285F4; /* warna khas Google */
+  color: white;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  margin-bottom: 8px;
+}
+
+/* Navigasi */
+nav {
+  background-color: #333;
+  padding: 5px 0;
+
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 16px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Layout utama */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  overflow: auto;
+}
+
+/* Konten utama */
+#content {
+  flex: 3;
+  min-width: 250px;
+}
+
+/* Sidebar */
+aside {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Card umum */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+/* Gambar utama */
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+/* Profile di aside */
+.profile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
