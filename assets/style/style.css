@@ -46,7 +46,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 1rem 6rem 0rem 6rem;;
+  padding: 1rem 6rem 0rem 6rem;
 }
 
 #content {
@@ -70,6 +70,7 @@ article h2, article h3 {
 section{
   margin-bottom: 2rem;
 }
+
 .featured-image {
   width: 100%;
   border-radius: 8px;
@@ -79,6 +80,14 @@ section{
 .card {
   margin: 40px auto;
 }
+
+.team-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
 
 .team-table {
   margin: 0 auto;
@@ -91,9 +100,12 @@ section{
 }
 
 .team-card {
+  flex: 1 1 200px; 
+  max-width: 220px;
+  background: #fff;
   padding: 20px;
-  width: 200px;
   text-align: center;
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
@@ -117,52 +129,63 @@ section{
 }
 
 /* Aside */
-aside {
-  flex: 1;
-  min-width: 250px;
-  box-sizing: border-box;
+aside{
+  padding: 2.5rem 0 0 0;
 }
 
-aside .profile.card {
-  background-color: #fff;
+.me-wrapper {
+  background: #fff;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  text-align: center; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
-aside .profile img {
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem auto; 
+.profile-container img {
+  width: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-
-aside table {
-  width: 100%;
-  margin-top: 1rem;
-  border-collapse: collapse;
+.me-wrapper h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-aside th, aside td {
+.me-wrapper ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.me-wrapper ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   text-align: left;
-  padding: 0.5rem 0;
-  font-weight: 400;
 }
 
-aside .me-wrapper table th img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
+.me-wrapper ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.me-wrapper ul li strong {
+  font-size: 0.85rem;
   display: block;
-  margin: 0 auto;
 }
 
+.me-wrapper ul li p,
+.me-wrapper ul li a {
+  font-size: 0.95rem;
+  color: #3d75cfff;
+  text-decoration: none;
+}
 
-aside th {
-  color: #555;
+.me-wrapper ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
@@ -179,5 +202,8 @@ footer {
 @media (max-width: 768px) {
   main {
     flex-direction: column;
+  }
+  .contact-item a {
+    font-size: 13px;
   }
 }
