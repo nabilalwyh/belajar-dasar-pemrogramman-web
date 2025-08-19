@@ -77,6 +77,12 @@ section{
   margin-bottom: 1rem;
 }
 
+#coreteam {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
 .card {
   margin: 40px auto;
 }
