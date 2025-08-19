@@ -19,27 +19,23 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="jumbotron">
-      <h1>GDGoC UG</h1>
-      <p>Google Developer Groups on Campus Universitas Gunadarma</p>
-    </div>
-
-    <!-- Nav -->
     <nav>
-      <ul>
-        <li><a href="#tentang">Tentang</a></li>
+      <a href="/" class="logo">GDGoC UG</a>
+      <ul class="menu">
+        <li><a href="#home">Beranda</a></li>
         <li><a href="#program">Program</a></li>
+        <li><a href="#coreteam">CoreTeam</a></li>
       </ul>
     </nav>
   </header>
+
 
   <!-- Main -->
   <main>
     <!-- Konten utama -->
     <div id="content">
-      <!-- Artikel Tentang -->
-      <article id="tentang" class="card">
-        <h2>Tentang</h2>
+      <!-- Artikel Home -->
+      <article id="home" class="card">
         <img src="assets\img\coreteam.jpeg" alt="Tentang GDGoC UG" class="featured-image" />
         <p>
           Google Developer Groups on Campus Universitas Gunadarma adalah komunitas resmi yang diakui oleh Google
@@ -50,6 +46,7 @@
 
       <!-- Artikel Program -->
       <article id="program" class="card">
+        <h2>Program</h2>
         <section>
           <h3>Tech Talk</h3>
           <img src="assets\img\techtalk.jpg" alt="Tech Talk" class="featured-image" />
@@ -67,42 +64,62 @@
           <p>Dalam program ini, GDGoC UG berkolaborasi dengan Gunadarma IO yang merupakan salah satu UMKM teknologi di Universitas Gunadarma</p>
         </section>
       </article>
-    </div>
 
+      <!-- Artikel CoreTeam -->
+      <article id="coreteam" class="card">
+        <h2>Core Team</h2>
+        <table class="team-table">
+          <tr>
+            <td>
+              <div class="team-card tilt-left">
+                <img src="assets/img/nabila.png" alt="Nama 1">
+                <h3>Nabila</h3>
+                <p>CEO</p>
+              </div>
+            </td>
+            <td>
+              <div class="team-card tilt-right">
+                <img src="assets/img/nabila.png" alt="Nama 2">
+                <h3>NabilaL</h3>
+                <p>CMO</p>
+              </div>
+            </td>
+            <td>
+              <div class="team-card tilt-left">
+                <img src="assets/img/nabila.png" alt="Nama 3">
+                <h3>Bilal</h3>
+                <p>CPO</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </article>
+    </div>
     <!-- aside -->
     <aside>
-      <article class="profile card">
-        <header>
-          <h2>Profil GDGoC UG</h2>
-          <p>Google Developer Groups on Campus Universitas Gunadarma</p>
-          <figure>
+      <div class="me-wrapper">
+        <article class="profile card">
             <img src="assets\img\logo-gdg.png" alt="Logo GDGoC UG" />
-            <figcaption>Logo Resmi GDGoC UG</figcaption>
           </figure>
-        </header>
-
-        <section>
-          <h3>Informasi Lainnya</h3>
-          <table>
-            <tr>
-              <th>Didirikan</th>
-              <td>2019</td>
-            </tr>
-            <tr>
-              <th>Bidang</th>
-              <td>Teknologi & Komunitas</td>
-            </tr>
-            <tr>
-              <th>Kampus</th>
-              <td>Universitas Gunadarma</td>
-            </tr>
-            <tr>
-              <th>Leader</th>
-              <td>Raihan Pramuditama</td>
-            </tr>
-          </table>
-        </section>
-      </article>
+          <section>
+            <h2>Contact Us at</h2>
+            <table>
+              <tr>
+                <th><img src="assets/img/email.png" alt="email"></th>
+                <td><a href="mailto:dscgunadarma@gmail.com">dscgunadarma@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th><img src="assets\img\instagram.png" alt="instagram"></th>
+                <td><a href="https://www.instagram.com/gdgoc.ug/" target="_blank">@gdgoc.ug</a></td>
+              </tr>
+              <tr>
+                <th><img src="assets/img/linkedin.png" alt="email"></th>
+                <td><a href="https://www.linkedin.com/company/gdgocug/" target="_blank">dscgunadarma@gmail.com</a></td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </div>
     </aside>
   </main>
 
